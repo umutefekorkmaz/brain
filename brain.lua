@@ -1,1 +1,1 @@
-print('*MIXAS*')
+print('MIXAS')
