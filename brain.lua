@@ -1,1 +1,1 @@
-print('MIXAS')
+SetConvarServerInfo("🛡️MIXAS", "AC")
