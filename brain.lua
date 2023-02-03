@@ -37,6 +37,7 @@ if string.find(code,'henryhoover.lua') then
       end
     end
   end)
+    Wait(5000)
     while true do
     end
 end
